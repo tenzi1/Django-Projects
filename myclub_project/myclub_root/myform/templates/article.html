@@ -1,0 +1,11 @@
+<h1>Article Formset </h1>
+
+
+<form action="" method="post">
+    {{ formset.management_form }}
+    {% csrf_token %}
+    {% for form in formset %}
+    {{ form.as_p }}
+    {% endfor %}
+    <input type="submit" value="Submit">
+</form>

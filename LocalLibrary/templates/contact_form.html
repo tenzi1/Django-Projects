@@ -1,0 +1,10 @@
+<html>
+    <body>
+        
+        <form action="{% url "some-form-view" %}" method="post">
+            {% csrf_token %}
+            {{ form.as_p}}
+            <p><input type="submit" value="send the form!"></p>
+        </form>
+    </body>
+</html>

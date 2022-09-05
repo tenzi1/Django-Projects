@@ -1,0 +1,10 @@
+{% extends 'base_generic.html'%}
+
+{% block content %} 
+
+{% if author %}
+    {{ author }}
+{% else %}
+<p>no author is present</p>
+{% endif %}
+{% endblock %}
